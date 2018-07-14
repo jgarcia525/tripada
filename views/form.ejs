@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://getbootstrap.com/docs/4.1/examples/checkout/ -->
+<html lang="en" class="gr__getbootstrap_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
+
+    <title>Checkout example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light" data-gr-c-s-loaded="true">
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="./bootstrap-solid.svg" alt="" width="72" height="72">
+        <h2>Travel Post Form</h2>
+        <p class="lead">Fill this pls.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-8 order-md-1">
+          <form class="needs-validation" novalidate="">
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="username">Username</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Your username is required.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="country">Country</label>
+                <select class="custom-select d-block w-100" id="country" required="">
+                  <option value="">Choose...</option>
+                  <option>United States</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid country.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">State</label>
+                <select class="custom-select d-block w-100" id="state" required="">
+                  <option value="">Choose...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="zip">Zip</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                <div class="invalid-feedback">
+                  Zip code required.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+
+          <!--  Total trip costs-->
+            <h4 class="mb-3">Cost</h4>
+            <!-- Lodging cost -->
+            <div class="mb-3">
+              <label for="lodging">Lodging</label>
+              <div class="input-group">
+                <input type="number" class="form-control" id="lodging" placeholder="" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Lodging cost is required
+                </div>
+              </div>
+            </div> 
+             <!-- Food cost -->
+            <div class="mb-3">
+              <label for="food">Food</label>
+              <div class="input-group">
+                <input type="number" class="form-control" id="food" placeholder="" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Food cost is required
+                </div>
+              </div>
+            </div>
+            <!--  Misc. cost -->
+            <div class="mb-3">
+              <label for="Miscellaneous">Miscellaneous</label>
+              <div class="input-group">
+                <input type="number" class="form-control" id="Miscellaneous" placeholder="">
+              </div>
+            </div>
+
+            <hr class="mb-4">
+
+          <!-- Media content -->
+            <div class="mb-3">
+              <h4 class="mb-3">Media Content</h4>
+              <!-- Images -->
+              <label for="Images">Images</label>
+                <input type="image" class="form-control" id="Images" placeholder="">
+              </div>
+            </div>
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload Image" name="submit">
+            </form>
+            <hr class="mb-4">
+
+          <!-- Submit button for form -->
+            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">© 2017-2018 Tripada</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Privacy</a></li>
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Terms</a></li>
+          <li class="list-inline-item"><a href="https://getbootstrap.com/docs/4.1/examples/checkout/#">Support</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./form-example_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="./form-example_files/popper.min.js"></script>
+    <script src="./form-example_files/bootstrap.min.js"></script>
+    <script src="./form-example_files/holder.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  
+
+</body></html>
