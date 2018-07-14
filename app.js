@@ -6,7 +6,7 @@ app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", function(req, res) {
-	res.sendFile(path.join(__dirname+'/views/index.html'));
+	res.sendFile(path.join(__dirname+'/views/form.html'));
 });
 
 // Tell Express to listen for requests (start server)
