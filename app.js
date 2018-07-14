@@ -11,6 +11,14 @@ app.get("/", function(req, res) {
 	res.sendFile(path.join(__dirname+'/views/template.html'));
 });
 
+app.get("/form", function(req, res) {
+	res.sendFile(path.join(__dirname+'/views/form.html'));
+});
+
+app.get("*", function(req, res) {
+	res.send("Sorry, that's not a valid url.");
+});
+
 // Tell Express to listen for requests (start server)
 app.listen(3000, function() {
 	console.log("Server has started.");
