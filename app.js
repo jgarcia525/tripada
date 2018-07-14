@@ -2,11 +2,13 @@ var express = require("express");
 var app = express();
 var path = require("path");
 
-app.use(express.static("public"));
+
+app.use(express.static(__dirname + "/public"));
 app.set("view engine", "ejs");
 
+
 app.get("/", function(req, res) {
-	res.sendFile(path.join(__dirname+'/views/form.html'));
+	res.sendFile(path.join(__dirname+'/views/template.html'));
 });
 
 // Tell Express to listen for requests (start server)
