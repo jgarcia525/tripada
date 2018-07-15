@@ -12,8 +12,8 @@ app.get("/", function(req, res) {
 	res.render('template');
 });
 
-app.get("/iform", function(req, res) {
-	res.sendFile(path.join(__dirname+'/views/form.html'));
+app.get("/form", function(req, res) {
+	res.render('form');
 });
 
 app.get("*", function(req, res) {
