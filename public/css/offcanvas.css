@@ -29,6 +29,10 @@ body {
   }
 }
 
+.new-trip {
+  float: right;
+}
+
 .nav-scroller {
   position: relative;
   z-index: 2;
