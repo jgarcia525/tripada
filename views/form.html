@@ -54,39 +54,81 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-5 mb-3">
-                <label for="country">Country</label>
-                <select class="custom-select d-block w-100" id="country" required="">
-                  <option value="">Choose...</option>
-                  <option>United States</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please select a valid country.
-                </div>
+            <div class="col-md-5 mb-3">
+              <label for="country">Country</label>
+              <select class="custom-select d-block w-100" id="country" required="">
+                <option value="">Choose...</option>
+                <option>United States</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid country.
               </div>
-              <div class="col-md-4 mb-3">
-                <label for="state">State</label>
-                <select class="custom-select d-block w-100" id="state" required="">
-                  <option value="">Choose...</option>
-                  <option>California</option>
-                </select>
-                <div class="invalid-feedback">
-                  Please provide a valid state.
-                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="state">State</label>
+              <select class="custom-select d-block w-100" id="state" required="">
+                <option value="">Choose...</option>
+                <option>California</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid state.
               </div>
-              <div class="col-md-3 mb-3">
-                <label for="zip">Zip</label>
-                <input type="text" class="form-control" id="zip" placeholder="" required="">
-                <div class="invalid-feedback">
-                  Zip code required.
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required="">
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+            
+            <hr class="mb-4">
+
+          <!--  Destination Information-->
+            <h4 class="mb-3">Destination Infomation</h4>
+            <!-- Trip title -->
+            <div class="mb-3">
+              <label for="title"><strong>Trip Title</strong> - Make it exciting!</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="title" placeholder="Shark Skydiving Adventure at Australia" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Title is required.
                 </div>
               </div>
             </div>
+            <!--  Destination -->
+            <div class="mb-3">
+              <label for="destination"><strong>Destination</strong> - Where did you go first?</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="destination" placeholder="Paris, France">
+              </div>
+            </div> 
+             <!-- Countries Visited -->
+            <div class="mb-3">
+              <label for="countries"><strong>Countries Visited</strong> - Did you go anywhere else?</label>
+              <div class="input-group">
+                <input type="custom-select" class="form-control" id="countries" placeholder="Choose..">
+              </div>
+            </div>
+            <!-- Cities Visited -->
+            <div class="mb-3">
+              <label for="cities"><strong>Cities Visited </strong>- What about any other cities?</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="food" placeholder="">
+              </div>
+            </div>
+            <!--  Misc. cost -->
+            <div class="mb-3">
+              <label for="miscellaneous">Miscellaneous</label>
+              <div class="input-group">
+                <input type="number" class="form-control" id="miscellaneous" placeholder="">
+              </div>
+            </div>
+
             <hr class="mb-4">
 
           <!--  Total trip costs-->
-            <h4 class="mb-3">Cost</h4>
+            <h4 class="mb-3">Costs</h4>
             <!-- Lodging cost -->
             <div class="mb-3">
               <label for="lodging">Lodging</label>
@@ -107,6 +149,16 @@
                 </div>
               </div>
             </div>
+            <!-- Food cost -->
+            <div class="mb-3">
+              <label for="food">Travel</label>
+              <div class="input-group">
+                <input type="number" class="form-control" id="food" placeholder="" required="">
+                <div class="invalid-feedback" style="width: 100%;">
+                  Food cost is required
+                </div>
+              </div>
+            </div>
             <!--  Misc. cost -->
             <div class="mb-3">
               <label for="Miscellaneous">Miscellaneous</label>
@@ -114,6 +166,19 @@
                 <input type="number" class="form-control" id="Miscellaneous" placeholder="">
               </div>
             </div>
+
+            <hr class="mb-4">
+
+          <!--  Media Content-->
+            <h4 class="mb-3">Media Content</h4>
+            <!-- Images -->
+            <div class="mb-3">
+              <label for="images">Images</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="images" placeholder="" required="">
+              </div>
+            </div> 
+
             <hr class="mb-4">
 
           <!-- Submit button for form -->
