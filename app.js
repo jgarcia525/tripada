@@ -1,18 +1,19 @@
 var express = require("express");
 var app = express();
 var path = require("path");
-
+var formRouter = require('./routes/formRouter');
 
 app.use(express.static(__dirname + "/public"));
+app.use('/formSubmit', formRouter);
 app.set("view engine", "ejs");
 
 
 app.get("/", function(req, res) {
-	res.sendFile(path.join(__dirname+'/views/template.html'));
+	res.render('template');
 });
 
 app.get("/form", function(req, res) {
-	res.sendFile(path.join(__dirname+'/views/form.html'));
+	res.render('form');
 });
 
 app.get("*", function(req, res) {
