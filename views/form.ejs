@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
     <title>Tripadux - Trip Post Form</title>
 
@@ -21,11 +20,11 @@
     <div class="container">
       <div class="py-5 text-center">
         <img class="d-block mx-auto mb-4" src="./bootstrap-solid.svg" alt="" width="72" height="72">
-        <h2>Travel Post Form</h2>
-        <p class="lead">Fill this pls.</p>
+        <h2>Trepadeux - Travel Post Form</h2>
+        <p>Book Your Adventure!</p>
       </div>
       <div class="row">
-        <div class="col-md-8 order-md-1">
+        <div class="col-md-12 order-md-1">
           <form class="needs-validation" novalidate="" action="/formSubmit" method="POST">
   
           <!--  Destination Information-->
@@ -117,20 +116,21 @@
 
             <hr class="mb-4">
 
-          <!--  Media Content-->
+          <!--  Decription-->
             <!-- <h4 class="mb-3">Media Content</h4> -->
             <!-- Images -->
-            <!-- <div class="mb-3">
-              <label for="images">Images</label>
+            <div class="mb-3">
+              <label for="description"><strong>Description</strong> - How was your trip?</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="images" placeholder="" required="">
+                <input type="text" class="form-control" id="description" placeholder="" required="">
               </div>
-            </div>  -->
+            </div> 
 
             <!-- <hr class="mb-4"> -->
 
           <!-- Submit button for form -->
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+            <!-- <button class="btn btn-primary btn-lg btn-block" type="submit" href="/">Submit</button> -->
+            <a href="/home" class="btn btn-primary btn-lg btn-block" id="new-trip">Create Trip</a>
           </form>
         </div>
       </div>
