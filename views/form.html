@@ -16,7 +16,7 @@
     <link href="./css/form-validation.css" rel="stylesheet">
   </head>
 
-  <body class="bg-light" data-gr-c-s-loaded="true">
+  <body class="bg-light" data-gr-c-s-loaded="true">d
 
     <div class="container">
       <div class="py-5 text-center">
@@ -107,14 +107,19 @@
             <div class="mb-3">
               <label for="countries"><strong>Countries Visited</strong> - Did you go anywhere else?</label>
               <div class="input-group">
-                <input type="custom-select" class="form-control" id="countries" placeholder="Choose..">
+                <select type="custom-select" class="form-control" id="countries">
+                  <option value="">Choose...</option>
+                  <option>France</option>
+                </select> 
               </div>
             </div>
             <!-- Cities Visited -->
             <div class="mb-3">
               <label for="cities"><strong>Cities Visited </strong>- What about any other cities?</label>
               <div class="input-group">
-                <input type="text" class="form-control" id="food" placeholder="">
+                <input type="select" class="form-control" id="cities" placeholder="">
+                <option value="">Choose...</option>
+                <option>Paris</option>
               </div>
             </div>
             <!--  Misc. cost -->

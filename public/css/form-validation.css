@@ -2,13 +2,24 @@ body {
 	color: black;
 }
 
+h4 {
+	color: #659DBD;
+}
+
+h2 {
+	color: #659DBD;
+}
+
 .py-5 {
 	color: white;
 }
 
 .container {
   max-width: 960px;
-  background-color: #659DBD;
+  background-color: white;
+  width: 75%;
+  margin: 0 auto;
+
 }
 
 .border-top { 
